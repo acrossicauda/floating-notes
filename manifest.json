@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "Floating Note",
+    "description": "Floating Note",
+    "author": "Tiago Sousa",
+    "browser_action": {
+   	 "default_title": "Hello World",
+   	 "default_popup": "index.html",
+   	 "default_icon": "icon.png"
+    }
+}
