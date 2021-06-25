@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="ptBr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +9,37 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <script src="./jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="./bootstrap/js/bootstrap.min.js"></script>
+        <!-- /Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
         <link href="./style.css" rel="stylesheet" type="text/css">
         <script src="./scripts.js"></script>
     </head>
     <body>
-        <div class="page">
-            <div class=""></div>
+        <div class="container">
+            <div class="row">
+                <span class="float-icon" style="z-index:1000;" target="_blank" onclick="toogleFloatingNote()">
+                    <i style="margin-top:16px" class="fa fa-file-text-o"></i>
+                </span>
+            </div>
+            <div class="row" id="float-notes">
+                <div class="float-notes" style="z-index:1000;" target="_blank">
+                    <div class="col-md-1">
+                        <i class="fa fa-arrow-up click"></i>
+                        <i class="fa fa-arrow-down click"></i>
+                        <i class="fa fa-plus blue click"></i>
+                        <i class="fa fa-minus red click"></i>
+                    </div>
+                    <div class="col-md-10 marginNotes">
+                        <h3>Floating Notes</h3>
+                        <textarea class="textarea form-control" name="txtNotes" id="txtNotes" rows="8"></textarea>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
