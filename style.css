@@ -89,6 +89,7 @@ html, body {
     margin-left: 4%;
     resize: none;
     background-color: #ffb546;
+    color: #ffffff;
 }
 .textarea:focus {
     background-color: #ffb546;
